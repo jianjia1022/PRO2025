@@ -33,8 +33,8 @@ public class Slice_o_Heaven {
     public void printReceipt(){
         System.out.println("Your order is ready!");
         System.out.println("******RECEIPT******");
-        System.out.println("Order ID"+orderID);
-        System.out.println("Order detail"+orderDetail);
-        System.out.println("Order Total"+orderTotal);
+        System.out.println("Order ID："+orderID);
+        System.out.println("Order detail："+orderDetail);
+        System.out.println("Order Total："+orderTotal);
     }
 }
