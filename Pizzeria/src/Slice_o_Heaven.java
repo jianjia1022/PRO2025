@@ -8,19 +8,48 @@ public class Slice_o_Heaven {
     public double pizzaPrice;
     public int sides;
     public String drinks;
-    public String orderID;
+    private String orderID;
     public String orderDetail;
-    public double orderTotal;
+    private double orderTotal;
+    
+    final String DEF_ORDER_ID="DEF-SOH-099";
+    final String DEF_PIZZA_INGREDIENTS="Mozzarella Cheese";
+    final double DEF_ORDER_TOTAL=15.00;
 
 
-
-    public void takeOrder(String id,String detail,double total){
-        orderID=id;
-        orderDetail=detail;
-        orderTotal=total;
+    public Slice_o_Heaven(){
+        orderID=DEF_ORDER_ID;
+        pizzaIngredients=DEF_PIZZA_INGREDIENTS;
+        orderTotal=DEF_ORDER_TOTAL;
+    }
+    public Slice_o_Heaven(String orderID,String pizzaIngredients,double orderTotal){
+        this.orderID=orderID;
+        this.pizzaIngredients=pizzaIngredients;
+        this.orderTotal=orderTotal;
+    }
+    public String getOrderID(){
+        return orderID;
+    }
+    public void setOrderID(String orderID){
+        this.orderID=orderID;
+    }
+    public String getPizzaIngredients(){
+        return pizzaIngredients;
+    }
+    public void setPizzaIngredients(String pizzaIngredients){
+        this.pizzaIngredients=pizzaIngredients;
+    }
+    public double getOrderTotal(){
+        return orderTotal;
+    }
+    public void setOrderTotal(double orderTotal){
+        this.orderTotal=orderTotal;
+    }
+    public void takeOrder(){
         System.out.println("Oreder accepted!");
         System.out.println("Oreder is being prepared!");
         makePizza();
+        printReceipt();
     }
     private void makePizza(){
         System.out.println("Your pizza is making!");
@@ -30,10 +59,12 @@ public class Slice_o_Heaven {
             System.out.println("Pizza is ready for pickup!");
         }
     }
-    public void printReceipt(){
+    private void printReceipt(){
+        
+        System.out.println("Your order is ready!");
         System.out.println("******RECEIPT******");
-        System.out.println("Order ID"+orderID);
-        System.out.println("Order detail"+orderDetail);
-        System.out.println("Order Total"+orderTotal);
+        System.out.println("Order ID: "+orderID);
+        System.out.println("Order detail: "+pizzaIngredients);
+        System.out.println("Order Total: "+orderTotal);
     }
 }
