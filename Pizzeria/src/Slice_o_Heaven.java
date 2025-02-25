@@ -11,7 +11,7 @@ public class Slice_o_Heaven {
     private String orderID;
     public String orderDetail;
     private double orderTotal;
-    
+
     final String DEF_ORDER_ID="DEF-SOH-099";
     final String DEF_PIZZA_INGREDIENTS="Mozzarella Cheese";
     final double DEF_ORDER_TOTAL=15.00;
