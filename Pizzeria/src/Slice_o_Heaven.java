@@ -6,12 +6,15 @@ public class Slice_o_Heaven {
     public String storeMenu;
     public String pizzaIngredients;
     public double pizzaPrice;
-    public int sides;
+    public String sides;
     public String drinks;
     private String orderID;
     public String orderDetail;
     private double orderTotal;
-
+    private int firstCardDigit;
+    private int lastFourDigits;
+    public String cardNumberToDisplay;
+    final String blackCardNumber="12345678987654";
     final String DEF_ORDER_ID="DEF-SOH-099";
     final String DEF_PIZZA_INGREDIENTS="Mozzarella Cheese";
     final double DEF_ORDER_TOTAL=15.00;
@@ -67,4 +70,31 @@ public class Slice_o_Heaven {
         System.out.println("Order detail: "+pizzaIngredients);
         System.out.println("Order Total: "+orderTotal);
     }
+
+    public void processCardPayment(String cardNumber,String expiryDate,int cvv){
+        if(cardNumber.length()==14){
+            System.out.println("\nCard accepted");
+        }
+        else{
+            System.out.println("\nInvalid card");
+        }
+        firstCardDigit=Integer.parseInt(cardNumber.substring(0, 1));
+        if(cardNumber.equals(blackCardNumber)){
+            System.out.println("\nCard is blacklisted. Please use another card.");
+        }
+        lastFourDigits=Integer.parseInt(cardNumber.substring(10, 14));
+        String middle=cardNumber.substring(1,cardNumber.length()-4);
+        String replace=middle.replaceAll("\\d","*");
+        cardNumberToDisplay=firstCardDigit+replace+lastFourDigits;
+        System.out.println(cardNumberToDisplay);
+    }
+    public void specialOfTheDay(String pizzaOfTheDay,String sideOftheDay,double specialPrice){
+        System.out.println("Today's special pizza: "+pizzaOfTheDay);
+        System.out.println("Today's special sides: "+sideOftheDay);
+        System.out.println("Today's special price: "+specialPrice);
+    }
+
+
+
+
 }
