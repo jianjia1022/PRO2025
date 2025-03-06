@@ -4,6 +4,7 @@ public class App {
         special.specialOfTheDay("Cheese Pizza", "Fired chips", 30.00);
         Slice_o_Heaven pizza1=new Slice_o_Heaven("DEF_SOH_100","Hawaii",123);
         pizza1.takeOrder();
+        System.out.println(pizza1);
         
 }
 }
