@@ -234,6 +234,7 @@ public class Slice_o_Heaven {
         }
        
         makeCardPayment();
+
         input.close();
     }
 
@@ -305,7 +306,7 @@ public class Slice_o_Heaven {
         String cardNumber1=Long.toString(cardNumber); 
         while (cardNumber1.length()!=14||cardNumber==blackCardNumber){
             System.out.println("\nInvalid card");
-            makeCardPayment();
+            System.out.println("Enter your card number again: ");
             cardNumber=input.nextLong();
             cardNumber1=Long.toString(cardNumber);       
         }
