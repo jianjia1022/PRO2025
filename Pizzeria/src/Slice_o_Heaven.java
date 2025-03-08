@@ -303,18 +303,11 @@ public class Slice_o_Heaven {
    
     public void processCardPayment(long cardNumber,String expiryDate,int cvv){
         String cardNumber1=Long.toString(cardNumber); 
-        while (cardNumber1.length()!=14){
+        while (cardNumber1.length()!=14||cardNumber==blackCardNumber){
             System.out.println("\nInvalid card");
             makeCardPayment();
             cardNumber=input.nextLong();
             cardNumber1=Long.toString(cardNumber);       
-        }
-
-        if(cardNumber==blackCardNumber){
-            System.out.println("\nCard is blacklisted. Please use another card.");
-            makeCardPayment();
-            cardNumber=input.nextLong();
-            cardNumber1=Long.toString(cardNumber);
         }
 
         firstCardDigit=Integer.parseInt(cardNumber1.substring(0, 1));
