@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -22,13 +24,17 @@ public class ExceptionDemo {
         divide();
     }
 
-    public void readAFile() throws InputMismatchException,MissingExtensionException{
+    public void readAFile() throws IOException,MissingExtensionException{
         System.out.println("Enter the file name: ");
         String fileName=input.nextLine();
         if(!fileName.contains(".")){
             throw new MissingExtensionException("The file name is missing an extension!");
         }
-        
+        BufferedReader reader=new BufferedReader(new FileReader(fileName));
+        String line=reader.readLine();
+        System.out.println("The content of the file is: "+line);
+        reader.close();
+        input.close();
     }
 
     public void displayChoices(){

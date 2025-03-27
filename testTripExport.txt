@@ -1,0 +1,125 @@
+===Trip Details===
+ Thank you for flying with MarsX. Here's your trip details:
+Booking ID: MX1120251311
+Total Passengers: 11
+Trip Type: Premium
+Date of Departure: 2025-03-09
+Date of Return: 2025-04-09
+Total Days: 31
+Total Ticket Price: 1020000.0
+Number of Children: 4
+Passenger Details:
+
+===Regular Passengers===
+
+===VIP Passengers===
+
+Passenger ID: MX001
+Passenger Name: Ripley
+Date Of Birth: 2018-07-12
+Age: 6
+Medical Conditions: None
+Insurance Number: 12345
+Insurance Company: RedDOT
+Insurance Contact: 555-1234
+VIP Card Number: A0255MRSX
+
+Passenger ID: MX002
+Passenger Name: Arthur
+Date Of Birth: 2015-03-25
+Age: 10
+Medical Conditions: Asthma
+Insurance Number: 67890
+Insurance Company: Far&Beyond
+Insurance Contact: 555-5678
+VIP Card Number: A19364MRSX
+
+Passenger ID: MX003
+Passenger Name: Zaphod
+Date Of Birth: 2010-05-15
+Age: 14
+Medical Conditions: Stress
+Insurance Number: 45678
+Insurance Company: RedDOT
+Insurance Contact: 555-9999
+VIP Card Number: A99999MRSX
+
+Passenger ID: MXJAS1975
+Passenger Name: Jason Bourne
+Date Of Birth: 1975-09-12
+Age: 49
+Medical Conditions: Amnesia
+Insurance Number: 12089
+Insurance Company: Aviva
+Insurance Contact: 222-2365
+VIP Card Number: A0155MRSX
+
+Passenger ID: MXJAM1962
+Passenger Name: James Bond
+Date Of Birth: 1962-03-12
+Age: 63
+Medical Conditions: Exhaustion
+Insurance Number: 5645
+Insurance Company: If
+Insurance Contact: 222-2378
+VIP Card Number: A0156MRSX
+
+Passenger ID: MXKEV2017
+Passenger Name: Kevin McAllister
+Date Of Birth: 2017-09-12
+Age: 7
+Medical Conditions: Loneliness
+Insurance Number: 1247
+Insurance Company: Ben and Partners
+Insurance Contact: 385-4131
+VIP Card Number: A0167MRSX
+
+Passenger ID: MXJOH1970
+Passenger Name: John Wick
+Date Of Birth: 1970-01-01
+Age: 55
+Medical Conditions: Heartbroken
+Insurance Number: 1027
+Insurance Company: Lyfe
+Insurance Contact: 358-0989
+VIP Card Number: A0157MRSX
+
+Passenger ID: MXJAC1976
+Passenger Name: Jack Reacher
+Date Of Birth: 1976-02-17
+Age: 49
+Medical Conditions: Paranoid
+Insurance Number: 9810
+Insurance Company: Capable Trust
+Insurance Contact: 555-09897
+VIP Card Number: A0158MRSX
+
+Passenger ID: MXJOH1979
+Passenger Name: John Rambo
+Date Of Birth: 1979-06-15
+Age: 45
+Medical Conditions: PTSD
+Insurance Number: 6599
+Insurance Company: If
+Insurance Contact: 546-8761
+VIP Card Number: A0159MRSX
+
+Passenger ID: MXJOH1965
+Passenger Name: John McClane
+Date Of Birth: 1965-10-22
+Age: 59
+Medical Conditions: Insomnia
+Insurance Number: 1876
+Insurance Company: Prudential
+Insurance Contact: 101-7655
+VIP Card Number: A0160MRSX
+
+Passenger ID: MXJOH1985
+Passenger Name: John Connor
+Date Of Birth: 1985-11-23
+Age: 39
+Medical Conditions: Stress
+Insurance Number: 3377
+Insurance Company: Aviva
+Insurance Contact: 760-7761
+VIP Card Number: A0162MRSX
